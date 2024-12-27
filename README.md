@@ -25,7 +25,7 @@ pip install pdfplumber
 project-directory/
 |-- pdf_files/         # Directory containing your PDF files
 |-- extracted_data.csv # Output file for the extracted data
-|-- script.py          # The main Python script
+|-- main.py          # The main Python script
 ```
 
 ## Configuration
@@ -50,10 +50,10 @@ project-directory/
 ### Functions
 
 - **`remove_specific_positions(extracted_tracking_number)`**:
-  Cleans the tracking number by removing characters at specified positions.
+  As for this case extracted tracking numbers contains some extra miss detected letters/numbers in same places for each numbers. To cleans the tracking number by removing characters at specified positions.
 
 - **`extract_text_from_pdf(pdf_path, output_writer)`**:
-  Extracts order and tracking information from each page of a PDF file and writes it to the CSV.
+  Extracts order and tracking information from each PDF file and writes it to the CSV.
 
 - **`main()`**:
   Iterates through all PDF files in the specified directory and processes them using `extract_text_from_pdf`.
@@ -62,18 +62,15 @@ project-directory/
 
 The resulting CSV file will have the following structure:
 
-| Page Name          | Order Info | Tracking Info |
-|--------------------|------------|---------------|
-| file1_page_1       | 123456     | ABCDEFG       |
-| file2_page_1       | 789012     | HIJKLMN       |
+| Page Name   | Order Info | Tracking Info |
+|-------------|------------|---------------|
+| file1       | 123456     | ABCDEFG       |
+| file2       | 789012     | HIJKLMN       |
 
 ## Notes
 - Ensure the PDF files are formatted consistently to avoid extraction errors.
 - Modify the coordinate values in the script if the structure of your PDF files changes.
 
-## License
-
-This project is licensed under the MIT License. Feel free to use and modify it as per your needs.
 
 ## Contributions
 
@@ -83,4 +80,4 @@ Contributions, suggestions, and improvements are welcome! Feel free to submit a 
 
 **Anayatul Ahad Shoikot**
 
-For questions or feedback, please contact: [your-email@example.com](mailto:your-email@example.com).
+For questions or feedback, please contact: [aashoikot002@gmail.com](mailto:aashoikot002@gmail.com).
