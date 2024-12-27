@@ -1,1 +1,0 @@
-# PDF Data Extraction Tool
