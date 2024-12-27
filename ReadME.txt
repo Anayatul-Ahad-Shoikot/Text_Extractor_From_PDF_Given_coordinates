@@ -1,0 +1,1 @@
+This program is extracting text from given coordinates. Here we are passing a folder contains PDF files. Each files are iterated and looking for the given coordinates then extracting those selected ordinates value. As it;s providing some random extra charecter It's need to clean the data.
