@@ -35,13 +35,13 @@ def extract_text_from_pdf(pdf_path, output_writer):
             # Apply cleaning to the extracted tracking number
             cleaned_tracking_text = remove_specific_positions(tracking_text)
             # Save to CSV
-            output_writer.writerow([f"{pdf_name}_page_{page_num}", order_text, cleaned_tracking_text])
+            output_writer.writerow([f"{pdf_name}", order_text, cleaned_tracking_text])
 
 # Main function to process all PDFs and save results to CSV
 def main():
     with open(OUTPUT_CSV, mode='w', newline='', encoding='utf-8') as csv_file:
         writer = csv.writer(csv_file)
-        writer.writerow(["Page Name", "Order Info", "Tracking Info"])
+        writer.writerow(["PDF Files", "Order", "Tracking Number"])
         for filename in os.listdir(PDF_DIR):
             if filename.endswith(".pdf"):
                 pdf_path = os.path.join(PDF_DIR, filename)
