@@ -81,6 +81,6 @@ Contributions, suggestions, and improvements are welcome! Feel free to submit a 
 
 ## Author
 
-**Your Name**
+**Anayatul Ahad Shoikot**
 
 For questions or feedback, please contact: [your-email@example.com](mailto:your-email@example.com).
